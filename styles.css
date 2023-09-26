@@ -1,6 +1,6 @@
 /* Set the entire page's background color using :root */
 :root {
-    --page-background-color: rgb(135, 206, 235);
+    --page-background-color:rgb(135, 206, 235);
 }
 
 body {
