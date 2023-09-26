@@ -1,26 +1,38 @@
+/* Set the entire page's background color using :root */
 :root {
     --page-background-color: rgb(135, 206, 235);
 }
 
 body {
     background-color: var(--page-background-color);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-p:first-child {
+/* Apply styles to the article */
+article {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Apply white text on a black background to the first paragraph */
+article p:first-child {
     color: white;
     background-color: black;
+    padding: 10px;
 }
 
-/* Second paragraph - standard text color */
-p:nth-child(2) {
+/* Apply standard text color to the second paragraph */
+article p:nth-child(2) {
     color: black;
 }
 
-/* Third paragraph - red text */
-p:nth-child(3) {
+/* Apply red text to the third paragraph */
+article p:last-child {
     color: red;
 }
-
 
 /* Apply styles to list items */
 .custom-list li {
